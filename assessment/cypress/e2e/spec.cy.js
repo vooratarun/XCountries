@@ -35,28 +35,23 @@ describe("Countries App", () => {
 
   describe("API Error Handling", () => {
     it("logs an error to the console on API failure", () => {
-      // Create spies on console.log and console.error
+      // Create a spy on console.error
       cy.on("window:before:load", (win) => {
-        cy.spy(win.console, "log").as("consoleLog");
         cy.spy(win.console, "error").as("consoleError");
       });
-
+  
       // Intercept the API request and force a network error
-      cy.intercept("GET", "https://restcountries.com/v3.1/all", {
+      cy.intercept("GET", "https://xcountries-backend.azurewebsites.net/all", {
         forceNetworkError: true,
       }).as("getFailedCountries");
-
+  
       cy.visit("http://localhost:3000");
-
+  
       // Wait for the intercepted API call
       cy.wait("@getFailedCountries");
-
-      // Check if either console.error or console.log was called
-      cy.get("@consoleError").then((consoleError) => {
-        cy.get("@consoleLog").then((consoleLog) => {
-          expect(consoleError.called || consoleLog.called).to.be.true;
-        });
-      });
+  
+      // Assert that console.error was called with the correct error message
+      cy.get("@consoleError").should("be.calledWithMatch", /Error fetching data:/);
     });
   });
 });
