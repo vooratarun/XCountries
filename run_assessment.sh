@@ -4,7 +4,7 @@ set -e
  
  
 # Read the first line starting with https from submit.txt
-USER_LINK_SUBMISSION=$(grep -m 1 '^https' submit.txt)
+USER_LINK_SUBMISSION=$(grep -m 1 '^http' submit.txt)
  
 # Check if USER_LINK_SUBMISSION is non-empty
 if [ -z "$USER_LINK_SUBMISSION" ]; then

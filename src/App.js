@@ -10,14 +10,15 @@ function App() {
           "https://xcountries-backend.azurewebsites.net/all"
         );
         if (!resp.ok) {
+          console.error("Error fetching data:")
           throw new Error(`${resp.status} ${resp.statusText}`);
         }
 
         const data = await resp.json();
         setCountries(data);
       } catch (err) {
-        console.log(err);
-        console.log("Error fetching data:", err);
+        console.error(err);
+        console.error("Error fetching data:", err);
         throw err;
       }
     };

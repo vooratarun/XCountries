@@ -1,6 +1,6 @@
 describe("Countries App", () => {
   beforeEach(() => {
-    cy.visit("https://xcountriescrio.netlify.app/");
+    cy.visit("http://localhost:3000");
   });
 
   describe("Loading and Initial Display", () => {
@@ -45,7 +45,7 @@ describe("Countries App", () => {
         forceNetworkError: true,
       }).as("getFailedCountries");
   
-      cy.visit("https://xcountriescrio.netlify.app/");
+      cy.visit("http://localhost:3000");
   
       // Wait for the intercepted API call
       cy.wait("@getFailedCountries");

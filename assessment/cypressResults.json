@@ -40,7 +40,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "darwin",
     "pageLoadTimeout": 60000,
-    "port": 53749,
+    "port": 55299,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -99,7 +99,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.17.0",
-  "endedTestsAt": "2025-08-22T06:32:22.861Z",
+  "endedTestsAt": "2025-08-22T06:40:05.507Z",
   "osName": "darwin",
   "osVersion": "22.4.0",
   "runs": [
@@ -112,16 +112,16 @@
         "passes": 3,
         "pending": 0,
         "failures": 1,
-        "start": "2025-08-22T06:32:17.842Z",
-        "end": "2025-08-22T06:32:22.862Z",
-        "duration": 5020
+        "start": "2025-08-22T06:40:03.064Z",
+        "end": "2025-08-22T06:40:05.509Z",
+        "duration": 2445
       },
       "screenshots": [
         {
           "height": 1440,
           "name": null,
           "path": "/Users/tarun/workspace/vooratarun-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/screenshots/spec.cy.js/Countries App -- API Error Handling -- logs an error to the console on API failure (failed).png",
-          "takenAt": "2025-08-22T06:32:22.654Z",
+          "takenAt": "2025-08-22T06:40:05.250Z",
           "width": 2560
         }
       ],
@@ -133,13 +133,13 @@
         "relative": "cypress/e2e/spec.cy.js"
       },
       "stats": {
-        "duration": 5022,
-        "endedAt": "2025-08-22T06:32:22.861Z",
+        "duration": 2446,
+        "endedAt": "2025-08-22T06:40:05.507Z",
         "failures": 1,
         "passes": 3,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-08-22T06:32:17.839Z",
+        "startedAt": "2025-08-22T06:40:03.061Z",
         "suites": 5,
         "tests": 4
       },
@@ -151,7 +151,7 @@
             }
           ],
           "displayError": null,
-          "duration": 1212,
+          "duration": 658,
           "state": "passed",
           "title": [
             "Countries App",
@@ -166,7 +166,7 @@
             }
           ],
           "displayError": null,
-          "duration": 1141,
+          "duration": 430,
           "state": "passed",
           "title": [
             "Countries App",
@@ -181,7 +181,7 @@
             }
           ],
           "displayError": null,
-          "duration": 442,
+          "duration": 276,
           "state": "passed",
           "title": [
             "Countries App",
@@ -195,8 +195,8 @@
               "state": "failed"
             }
           ],
-          "displayError": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Failed to fetch\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:143068)\n    at <unknown> (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:143167)\n    at li (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:93713)\n    at xs (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:113940)\n    at <unknown> (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:110530)\n    at S (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:138362)\n    at MessagePort.T (https://xcountriescrio.netlify.app/static/js/main.e18d355b.js:2:138896)",
-          "duration": 752,
+          "displayError": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Failed to fetch\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at fetchData (http://localhost:3000/static/js/bundle.js:33:28)\n    at <unknown> (http://localhost:3000/static/js/bundle.js:46:5)\n    at commitHookEffectListMount (http://localhost:3000/static/js/bundle.js:25931:30)\n    at commitPassiveMountOnFiber (http://localhost:3000/static/js/bundle.js:27424:17)\n    at commitPassiveMountEffects_complete (http://localhost:3000/static/js/bundle.js:27396:13)\n    at commitPassiveMountEffects_begin (http://localhost:3000/static/js/bundle.js:27386:11)\n    at commitPassiveMountEffects (http://localhost:3000/static/js/bundle.js:27376:7)\n    at flushPassiveEffectsImpl (http://localhost:3000/static/js/bundle.js:29259:7)\n    at flushPassiveEffects (http://localhost:3000/static/js/bundle.js:29212:18)\n    at <unknown> (http://localhost:3000/static/js/bundle.js:29027:13)",
+          "duration": 364,
           "state": "failed",
           "title": [
             "Countries App",
@@ -208,8 +208,8 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-08-22T06:32:17.839Z",
-  "totalDuration": 5022,
+  "startedTestsAt": "2025-08-22T06:40:03.061Z",
+  "totalDuration": 2446,
   "totalFailed": 1,
   "totalPassed": 3,
   "totalPending": 0,
