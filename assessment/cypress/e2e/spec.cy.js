@@ -1,6 +1,6 @@
 describe("Countries App", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000");
+    cy.visit("http://localhost:3001");
   });
 
   describe("Loading and Initial Display", () => {
@@ -45,11 +45,14 @@ describe("Countries App", () => {
         forceNetworkError: true,
       }).as("getFailedCountries");
   
-      cy.visit("http://localhost:3000");
+      cy.visit("http://localhost:3001");
   
       // Wait for the intercepted API call
       cy.wait("@getFailedCountries");
   
+
+      console.log("errror hereeer...........")
+      console.log(cy.get("@consoleError"));
       // Assert that console.error was called with the correct error message
       cy.get("@consoleError").should("be.calledWithMatch", /Error fetching data:/);
     });

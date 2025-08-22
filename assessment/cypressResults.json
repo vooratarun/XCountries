@@ -40,7 +40,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "darwin",
     "pageLoadTimeout": 60000,
-    "port": 55299,
+    "port": 57260,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -99,7 +99,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.17.0",
-  "endedTestsAt": "2025-08-22T06:40:05.507Z",
+  "endedTestsAt": "2025-08-22T06:53:21.511Z",
   "osName": "darwin",
   "osVersion": "22.4.0",
   "runs": [
@@ -109,22 +109,14 @@
       "reporterStats": {
         "suites": 5,
         "tests": 4,
-        "passes": 3,
+        "passes": 4,
         "pending": 0,
-        "failures": 1,
-        "start": "2025-08-22T06:40:03.064Z",
-        "end": "2025-08-22T06:40:05.509Z",
-        "duration": 2445
+        "failures": 0,
+        "start": "2025-08-22T06:53:19.306Z",
+        "end": "2025-08-22T06:53:21.513Z",
+        "duration": 2207
       },
-      "screenshots": [
-        {
-          "height": 1440,
-          "name": null,
-          "path": "/Users/tarun/workspace/vooratarun-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/screenshots/spec.cy.js/Countries App -- API Error Handling -- logs an error to the console on API failure (failed).png",
-          "takenAt": "2025-08-22T06:40:05.250Z",
-          "width": 2560
-        }
-      ],
+      "screenshots": [],
       "spec": {
         "absolute": "/Users/tarun/workspace/vooratarun-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/e2e/spec.cy.js",
         "fileExtension": ".js",
@@ -133,13 +125,13 @@
         "relative": "cypress/e2e/spec.cy.js"
       },
       "stats": {
-        "duration": 2446,
-        "endedAt": "2025-08-22T06:40:05.507Z",
-        "failures": 1,
-        "passes": 3,
+        "duration": 2208,
+        "endedAt": "2025-08-22T06:53:21.511Z",
+        "failures": 0,
+        "passes": 4,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-08-22T06:40:03.061Z",
+        "startedAt": "2025-08-22T06:53:19.303Z",
         "suites": 5,
         "tests": 4
       },
@@ -151,7 +143,7 @@
             }
           ],
           "displayError": null,
-          "duration": 658,
+          "duration": 769,
           "state": "passed",
           "title": [
             "Countries App",
@@ -166,7 +158,7 @@
             }
           ],
           "displayError": null,
-          "duration": 430,
+          "duration": 232,
           "state": "passed",
           "title": [
             "Countries App",
@@ -181,7 +173,7 @@
             }
           ],
           "displayError": null,
-          "duration": 276,
+          "duration": 294,
           "state": "passed",
           "title": [
             "Countries App",
@@ -192,12 +184,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Failed to fetch\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at fetchData (http://localhost:3000/static/js/bundle.js:33:28)\n    at <unknown> (http://localhost:3000/static/js/bundle.js:46:5)\n    at commitHookEffectListMount (http://localhost:3000/static/js/bundle.js:25931:30)\n    at commitPassiveMountOnFiber (http://localhost:3000/static/js/bundle.js:27424:17)\n    at commitPassiveMountEffects_complete (http://localhost:3000/static/js/bundle.js:27396:13)\n    at commitPassiveMountEffects_begin (http://localhost:3000/static/js/bundle.js:27386:11)\n    at commitPassiveMountEffects (http://localhost:3000/static/js/bundle.js:27376:7)\n    at flushPassiveEffectsImpl (http://localhost:3000/static/js/bundle.js:29259:7)\n    at flushPassiveEffects (http://localhost:3000/static/js/bundle.js:29212:18)\n    at <unknown> (http://localhost:3000/static/js/bundle.js:29027:13)",
-          "duration": 364,
-          "state": "failed",
+          "displayError": null,
+          "duration": 129,
+          "state": "passed",
           "title": [
             "Countries App",
             "API Error Handling",
@@ -208,10 +200,10 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-08-22T06:40:03.061Z",
-  "totalDuration": 2446,
-  "totalFailed": 1,
-  "totalPassed": 3,
+  "startedTestsAt": "2025-08-22T06:53:19.303Z",
+  "totalDuration": 2208,
+  "totalFailed": 0,
+  "totalPassed": 4,
   "totalPending": 0,
   "totalSkipped": 0,
   "totalSuites": 5,
