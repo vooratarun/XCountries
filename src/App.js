@@ -6,13 +6,20 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch("https://xcountries-backend.azurewebsites.net/all");
+        const resp = await fetch(
+          "https://xcountries-backend.azurewebsites.net/all"
+        );
+        if (!resp.ok) {
+          throw new Error(`${resp.status} ${resp.statusText}`);
+        }
+
         const data = await resp.json();
         setCountries(data);
       } catch (err) {
+        console.log(err);
+        console.log("Error fetching data:", err);
         throw err;
       }
-        
     };
     fetchData();
   }, []);

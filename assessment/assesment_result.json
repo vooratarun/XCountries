@@ -1,0 +1,6 @@
+{
+    "Test Case 1: Countries App - Loading and Initial Display": "TEST_STATUS_SUCCESS",
+    "Test Case 2: Countries App - Flag Display": "TEST_STATUS_SUCCESS",
+    "Test Case 3: Countries App - Country Name Display": "TEST_STATUS_SUCCESS",
+    "Test Case 4: Countries App - API Error Handling": "TEST_STATUS_FAILURE"
+}
